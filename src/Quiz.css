@@ -1,0 +1,73 @@
+/*title-score settings*/
+.title-score{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*title settings*/
+.title-game h1{
+    font-size: 40px;
+}
+
+/*score-game settings*/
+.score-game{
+    background: linear-gradient(#E65895, #BC6BE8);
+    padding: 1vh 1.5vh;
+    border-radius: 9999px;
+}
+
+/*quiz container settings*/
+.quiz-container{
+    background-color: #393F6E;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    padding: 10vh;
+    margin-top: 5vh;
+    box-shadow: 1px 1px 30px #000000;
+}
+
+/*question section div settings*/
+.number-question{
+    display: flex;
+    gap: 2.5vh;
+    margin-bottom:2vh;
+}
+
+/*question section settings*/
+.question-section{
+    background-color: #343964;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*country question settings*/
+.country-question{
+    margin: 2vh 0 2vh;
+}
+
+/*posible answer div settings*/
+.posible-answers{
+    margin: 2vh 0 2vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5vh;
+}
+
+/*answers buttons settings*/
+.posible-answers button{
+    background-color: #343964;
+    padding: 2vh;
+}
+
+/*answers buttons hover*/
+.posible-answers button:hover{
+    background: linear-gradient(#E65895, #BC6BE8);
+}

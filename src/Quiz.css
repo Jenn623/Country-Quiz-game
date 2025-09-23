@@ -71,3 +71,17 @@
 .posible-answers button:hover{
     background: linear-gradient(#E65895, #BC6BE8);
 }
+
+/*active circle settings*/
+.question-section.active{
+    background: linear-gradient(#E65895, #BC6BE8);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*answered section settings*/
+.question-section.answered{
+    background: linear-gradient(#E65895, #BC6BE8);
+    color: #ffffff;
+    font-weight: bold;
+}

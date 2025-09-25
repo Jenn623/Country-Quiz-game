@@ -65,6 +65,8 @@ function Quiz() {
         className={`question-section ${curr ? "active" : ""} ${
           answered ? "answered" : ""
         }`}
+        onClick={() => setCurrentIndex(index)}
+        style={{cursor: "pointer"}}
       >
         {index + 1}
       </section>

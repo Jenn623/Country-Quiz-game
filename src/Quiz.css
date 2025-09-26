@@ -215,3 +215,11 @@
         padding: 1.5vh;
     }
 }
+
+a[href^="tel:"],
+.score-game span,
+.question-section,
+.posible-answers button {
+  color: #a9a9a9;
+  text-decoration: none; 
+}

@@ -4,7 +4,6 @@ import './Quiz.jsx'
 import Quiz from './Quiz.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

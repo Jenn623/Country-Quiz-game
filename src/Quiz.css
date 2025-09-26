@@ -2,6 +2,8 @@
 .title-score{
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /*title settings*/
@@ -25,8 +27,10 @@
     justify-content: space-evenly;
     border-radius: 15px;
     padding: 10vh;
-    margin-top: 5vh;
+    /*margin-top: 5vh;*/
     box-shadow: 1px 1px 30px #000000;
+    width: 90%;
+    margin: 5vh auto;
 }
 
 /*question section div settings*/
@@ -63,8 +67,13 @@
 
 /*answers buttons settings*/
 .posible-answers button{
+    width: 25vh;
     background-color: #343964;
     padding: 2vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vh;
+    display: flex;
 }
 
 /*answers buttons hover*/
@@ -86,4 +95,123 @@
     font-weight: bold;
 }
 
+/*congrats container settings*/
+.congrats-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
 
+/*play again button settings*/
+#play-again{
+    text-align: center;
+    background: linear-gradient(#E65895, #BC6BE8);
+    height: 8vh;
+}
+
+/*start container settings*/
+.start-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    text-align: center;
+}
+
+/*world icon settings*/
+.world-img{
+    width: 12rem;
+}
+
+/*start button settings*/
+.start-button{
+    text-align: center;
+    background: linear-gradient(#E65895, #BC6BE8);
+    height: 8vh;
+}
+
+/*responsive settings*/
+@media (max-width: 768px) {
+    /* main container */
+    .quiz-container {
+        width: 90%;
+        margin-top: 2vh;
+        padding: 5vh 2vh;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    /*title*/
+    .title-score {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*fonts*/
+    .title-game h1 {
+        font-size: 24px;
+    }
+
+    /*score*/
+    .score-game {
+        padding: 0.5vh 1vh;
+        margin-top: 1vh;
+        width: 10rem;
+    }
+    
+    /*number sections*/
+    .number-question {
+        flex-wrap: wrap; /* wrap them if they dont fit on a single row*/
+        justify-content: center; 
+        gap: 1.5vh;
+    }
+
+    /*question section*/
+    .question-section {
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 0.8em;
+    }
+
+    /*posible answers*/
+    .posible-answers {
+        gap: 1.5vh;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*buttons fonts and sizes*/
+    .posible-answers button {
+        padding: 1.5vh; 
+        font-size: 0.9em;
+        width: 100%;
+    }
+    
+    /*start container and congrats container*/
+    .start-container, .congrats-container {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*world icon*/
+    .start-container img {
+        width: 8rem; 
+    }
+
+    /*congrats icon*/
+    .congrats-container img {
+        width: 8rem; 
+    }
+
+    /*start and play again button*/
+    .start-button, #play-again {
+        padding: 1.5vh;
+    }
+}

@@ -1,18 +1,18 @@
-// Función para barajar elementos en un array
+// shuffles the array
 function shuffleArray(array) {
   return [...array].sort(() => Math.random() - 0.5);
 }
 
-// Prepara las preguntas con la API de países
+// prepares questions with the country API
 export function prepareQuestions(countries) {
-  // Barajar los países antes de elegir
+  // shuffle before start
   const shuffledCountries = shuffleArray(countries);
 
-  // Elegir solo 10 aleatorios del total
+  // choose only 10
   return shuffledCountries.slice(0, 10).map((country) => {
     const correct = country.capital?.[0] || "Unknown";
 
-    // Generar opciones incorrectas
+    // generates incorrect answers
     const wrongOptions = [];
     while (wrongOptions.length < 3) {
       const random =
@@ -23,7 +23,7 @@ export function prepareQuestions(countries) {
       }
     }
 
-    // Armar respuestas con shuffle
+    // build answers with shuffle
     const answers = shuffleArray([
       { text: correct, isCorrect: true },
       ...wrongOptions.map((capital) => ({

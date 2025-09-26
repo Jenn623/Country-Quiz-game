@@ -1,12 +1,21 @@
-# React + Vite
+# 🌍 Country Quiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A country quiz developed as part of the Devchallenges.io challenge. This app allows users to
+test their knowledge of the capitals of independent countries.
 
-Currently, two official plugins are available:
+![Country Quiz Demo](demoreel-short.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ## 🛠️ Technologies
+* **React**: JavaScript library for the user interface.
+* **HTML & CSS**: Structure and styles for the design.
 
-## Expanding the ESLint configuration
+## 💡 How to Use
+1. Click the "Play" button to start the quiz.
+2. Select the answer you think is correct for each question.
+3. Navigate between questions by clicking on the numbers at the top.
+4. Your progress is saved automatically.
+5. After finishing all 10 questions, you'll see your final score. You can click "Play Again" button to start a new game.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Author
+
+**Jenn**
